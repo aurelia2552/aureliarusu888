@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Triere</title>
+
+    <style>
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="author">Realizat de: Roșu Anastasia</div>
+    <div class="header">
+        <a href="index.html"><h1>Metoda Backtracking</h1></a>
+    </div>
+    <div class="meniu">
+        <a href="index.html">Pagină principală</a> &nbsp &nbsp
+        <a href="triere.html">Metoda Trierii</a> &nbsp &nbsp
+        <a href="greedy.html">Metoda Greedy</a> &nbsp &nbsp
+        <a href="backtracking.html">Metoda backtracking</a>
+    </header>
+    <div class="content">
+        <div class="description">
+            <p>Backtracking este numele unui algoritm general de descoperire a tuturor soluțiilor unei probleme de calcul, algoritm ce se bazează pe construirea incrementală de soluții-candidat, abandonând fiecare candidat parțial imediat ce devine clar că acesta nu are șanse să devină o soluție validă.
+            </p>
+        </div>
+        <img src="backtracking.png" style="width:600px; height:300px">
+        <dl>
+            <dt><b>Cum se rezolvă</b></dt>
+            <dd>1. La fiecare pas k pornim de la o soluţie parţială v=( v1,v2,v3,...,vk-1) determinată până în acel moment şi încercăm să extindem această soluţie adăugând un nou element la sfârşitul vectorului. </dd>
+            <dd>2. Căutăm în mulţimea Sk , un nou element. </dd>
+            <dd>3. Dacă există un element neselectat încă, verificăm dacă acest element îndeplineşte condiţiile impuse de problemă, numite condiţii de continuare.</dd>
+            <dd>4. Dacă sunt respectate condiţiile de continuare, adăugăm elementul soluţiei parţiale. </dd>
+            <dd>5. Verificăm dacă am obţinut o soluţie completă. 
+                - dacă am obţinut o soluţie completă o afişăm şi se reia algoritmul de la pasul 1. 
+                - dacă nu am obţinut o soluţie, k <----- k+1 si se reia algoritmul de la pasul 1.</dd>
+            <dd>6. Dacă nu sunt respectate condiţiile de continuare se reia algoritmul de la pasul 2. </dd>
+            <dd>7. Dacă nu mai există nici un element neverificat în mulţimea Sk înseamnă că nu mai avem nici o posibilitate din acest moment, să construim soluţia finală aşa că trebuie să modificăm alegerile făcute în prealabil, astfel k <----- k-1 şi se reia problema de la pasul 1.</dd>
+        </dl>
+        <dl>
+        <div class="header">
+            <h1>Exemple de probleme</h1>
+            <dt><b>Problema 1</b></dt>
+            <dd>Se citește un număr natural n,generați și aflați combinațiile de cate n cifre binare care nu au doua cifre de 1 alăturate</dd>
+            <img src="probback.jpeg" style="width:500px; height:300px">
+            </div>
+
+            <dt><b>Problema 2</b></dt>
+            <dd>Să se creeze unprogram care să aranjeze în modurile posibile n creioane și m pixuri,astfel încat niciun creion să nu fie așezat între doi pixuri</dd>
+            <img src="probback1.jpeg" style="width:500px; height:300px">
+
+            
+
+<textarea name="triere" id="triere">*comentarii despre program*</textarea>
+    </div>
+</div>
+</body>
+</html>
